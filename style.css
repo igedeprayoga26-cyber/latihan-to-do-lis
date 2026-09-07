@@ -1,0 +1,281 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #667eea;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+
+h1 {
+    text-align: center;
+
+    color: #333;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-box {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+#taskInput {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+#taskInput:focus {
+    border-color: #667eea;
+}
+
+
+.input-box button {
+    padding: 12px 20px;
+
+    background: #667eea;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.input-box button:hover {
+    background: #4f63d2;
+}
+
+
+/* =========================
+   INFORMASI
+========================= */
+
+.info {
+    display: flex;
+
+    justify-content: space-between;
+
+    background: #f1f1f1;
+
+    padding: 12px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+}
+
+
+.info p {
+    color: #555;
+}
+
+
+.info span {
+    font-weight: bold;
+
+    color: #667eea;
+}
+
+
+/* =========================
+   DAFTAR TUGAS
+========================= */
+
+#taskList {
+    list-style: none;
+}
+
+
+/* =========================
+   TUGAS
+========================= */
+
+.task {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    background: #f8f8f8;
+
+    border-radius: 8px;
+
+    border-left: 5px solid #667eea;
+}
+
+
+/* CHECKBOX */
+
+.task input {
+    width: 20px;
+
+    height: 20px;
+
+    cursor: pointer;
+}
+
+
+/* NAMA TUGAS */
+
+.task-text {
+    flex: 1;
+
+    font-size: 16px;
+
+    color: #333;
+}
+
+
+/* TUGAS SELESAI */
+
+.task.selesai .task-text {
+    text-decoration: line-through;
+
+    color: #999;
+}
+
+
+/* =========================
+   TOMBOL EDIT
+========================= */
+
+.edit {
+    background: #ffc107;
+
+    border: none;
+
+    padding: 8px 10px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   TOMBOL HAPUS
+========================= */
+
+.hapus {
+    background: #dc3545;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 10px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   PESAN KOSONG
+========================= */
+
+#kosong {
+    text-align: center;
+
+    color: #999;
+
+    padding: 15px;
+}
+
+
+/* =========================
+   TAMPILAN HP
+========================= */
+
+@media (max-width: 500px) {
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-box button {
+        width: 100%;
+    }
+
+}
+

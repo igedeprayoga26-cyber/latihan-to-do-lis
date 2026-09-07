@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To Do List</title>
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📝 To Do List</h1>
+
+        <p class="subtitle">
+            Catat semua tugasmu di sini
+        </p>
+
+
+        <!-- INPUT TUGAS -->
+        <div class="input-box">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Masukkan tugas..."
+            >
+
+            <button onclick="tambahTugas()">
+                Tambah
+            </button>
+
+        </div>
+
+
+        <!-- INFORMASI -->
+        <div class="info">
+
+            <p>
+                Total:
+                <span id="total">0</span>
+            </p>
+
+            <p>
+                Selesai:
+                <span id="selesai">0</span>
+            </p>
+
+        </div>
+
+
+        <!-- DAFTAR TUGAS -->
+        <ul id="taskList"></ul>
+
+
+        <!-- PESAN JIKA KOSONG -->
+        <p id="kosong">
+            Belum ada tugas 😊
+        </p>
+
+    </div>
+
+
+    <!-- Menghubungkan JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
